@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Blumenstraße 68 Leipzig - Wohnung (modelliert)",
+    "unit": "meter",
+    "ceiling_height": 2.75,
+    "wall_thickness": 0.14,
+    "origin": "Wohnungseingang"
+  },
+  "rooms": [
+    {
+      "id": "flur",
+      "name": "Flur",
+      "polygon": [[0,0],[2.1,0],[2.1,4.2],[0,4.2]],
+      "floorTexture": "oak"
+    },
+    {
+      "id": "wohnen",
+      "name": "Wohn-/Esszimmer",
+      "polygon": [[2.1,0],[7.6,0],[7.6,4.8],[2.1,4.8]],
+      "floorTexture": "oak"
+    },
+    {
+      "id": "schlafen",
+      "name": "Schlafzimmer",
+      "polygon": [[0,4.2],[3.9,4.2],[3.9,8.2],[0,8.2]],
+      "floorTexture": "oak"
+    },
+    {
+      "id": "kueche",
+      "name": "Küche",
+      "polygon": [[3.9,4.8],[7.6,4.8],[7.6,8.2],[3.9,8.2]],
+      "floorTexture": "tile_light"
+    },
+    {
+      "id": "bad",
+      "name": "Bad",
+      "polygon": [[0,8.2],[3.0,8.2],[3.0,10.4],[0,10.4]],
+      "floorTexture": "tile_dark"
+    }
+  ],
+  "openings": {
+    "doors": [
+      { "wall": [[2.1,1.6],[2.1,2.5]], "height": 2.12, "sill": 0.0 },
+      { "wall": [[2.8,4.2],[3.6,4.2]], "height": 2.12, "sill": 0.0 },
+      { "wall": [[3.9,5.7],[3.9,6.6]], "height": 2.12, "sill": 0.0 },
+      { "wall": [[1.2,8.2],[2.0,8.2]], "height": 2.12, "sill": 0.0 }
+    ],
+    "windows": [
+      { "wall": [[7.6,1.2],[7.6,2.8]], "height": 1.45, "sill": 0.85 },
+      { "wall": [[7.6,5.8],[7.6,7.4]], "height": 1.45, "sill": 0.85 },
+      { "wall": [[0.0,9.0],[0.0,10.0]], "height": 1.20, "sill": 1.10 }
+    ]
+  },
+  "camera_path": [
+    [1.1, 1.0, 1.62],
+    [1.4, 3.5, 1.62],
+    [3.5, 2.2, 1.62],
+    [6.6, 2.5, 1.62],
+    [6.8, 6.9, 1.62],
+    [4.5, 6.8, 1.62],
+    [2.5, 6.9, 1.62],
+    [1.4, 9.4, 1.62]
+  ]
+}
