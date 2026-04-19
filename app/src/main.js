@@ -329,8 +329,8 @@ class FrameProjector {
       new THREE.PlaneGeometry(2.25, 1.26),
       new THREE.MeshBasicMaterial({ transparent: true, opacity: 0.94 })
     );
-    this.dynamicPlane.position.set(0, 1.65, -2.05);
-    this.scene.add(this.dynamicPlane);
+    this.dynamicPlane.position.set(0.8, -0.5, -1.2); // Position relative to camera
+    this.camera.add(this.dynamicPlane);
   }
 
   nearestFrameByPosition() {
