@@ -357,10 +357,7 @@ class FrameProjector {
     this.lastFrameNumber = nearest.frame.frame_number;
     this.frameInfoNode.textContent = `Frame: #${nearest.frame.frame_number} @ ${nearest.frame.timestamp_seconds.toFixed(3)}s`;
 
-    if (this.dynamicTexture) this.dynamicTexture.dispose();
-    this.dynamicTexture = this.textureLoader.load(nearest.frame.file);
-    this.dynamicTexture.colorSpace = THREE.SRGBColorSpace;
-    this.dynamicPlane.material.map = this.dynamicTexture;
+    this.dynamicPlane.material.map = nearest.mesh.material.map;
     this.dynamicPlane.material.needsUpdate = true;
   }
 }
